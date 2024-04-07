@@ -1,0 +1,4 @@
+make TARGET=linux_glibc
+sudo make install
+python3 -m http.server 8080 --bind 127.0.0.1 &
+haproxy -f examples/quick_test2.cfg
